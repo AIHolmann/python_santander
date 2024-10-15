@@ -9,11 +9,6 @@ print(10 / 3)
 numeros = [1, 2, 3, 4, 5]
 cuadrados = [x ** 2 for x in numeros if x % 2 == 0]
 print(cuadrados)
-"""
-very
-large
-coment
-"""
 
 #funciones
 def saludo(nombre):
@@ -60,3 +55,30 @@ def area_rectangulo(base, altura):
         float: El área del rectángulo.
     """
     return base * altura
+
+#ENTRADAS / SALIDAS
+nombre = input("Ingresa tu nombre: ")
+edad = input("Ingresa tu edad: ")
+
+print("Hola, " + nombre + "!")
+print("Tienes " + edad + " años.")
+if int(edad) >= 18:
+    print("Eres mayor de edad.")
+else:
+    print("Eres menor de edad.")
+
+#LECTURAS Y ESCRITURAS de archivos
+archivo = open("datos.txt", "r")
+contenido = archivo.read()
+print(contenido)
+archivo.close()
+
+archivo = open("datos.txt", "w")
+archivo.write("Hola, mundo!")
+archivo.close()
+
+with open("datos.txt", "r") as archivo:
+    contenido = archivo.read()
+    print(contenido)
+
+#IMPORTACION Y CREACION de modulos
