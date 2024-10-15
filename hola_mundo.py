@@ -82,3 +82,16 @@ with open("datos.txt", "r") as archivo:
     print(contenido)
 
 #IMPORTACION Y CREACION de modulos
+
+# import math
+#
+# resultado = math.sqrt(25)
+# print(resultado)  # Imprime 5.0
+
+from math import sqrt
+
+resultado = sqrt(25)
+print(resultado)  # Imprime 5.0
+
+import mi_modulo
+mi_modulo.saludar("Alejito")
